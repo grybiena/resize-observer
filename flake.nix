@@ -2,12 +2,10 @@
   description = "resize-observer";
 
   inputs = {
-    purescript-environment.url = "git+ssh://git@github.com/grybiena/purescript-environment?ref=grybiena";
-    flake-utils.follows = "purescript-environment/flake-utils";
-    nixpkgs.follows     = "purescript-environment/nixpkgs";
-    ps-tools.follows    = "purescript-environment/ps-tools";
-    purs-nix.follows    = "purescript-environment/purs-nix";
-
+    nixpkgs.url = "github:NixOS/nixpkgs/nixpkgs-unstable";
+    flake-utils.url = "github:numtide/flake-utils";
+    ps-tools.follows = "purs-nix/ps-tools";
+    purs-nix.url = "github:grybiena/purs-nix?ref=grybiena";
   };
   outputs = inputs@{ self, nixpkgs, flake-utils, ... }:
     flake-utils.lib.eachDefaultSystem (system:
