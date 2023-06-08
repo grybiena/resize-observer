@@ -1,7 +1,7 @@
 rec {
   description = "resize-observer";
   inputs = {
-    env.url = "git+ssh://git@github.com/grybiena/purescript-environment?ref=gen-overlays";  
+    env.url = "git+ssh://git@github.com/grybiena/purescript-environment?ref=grybiena";  
   };
 
   outputs = inputs@{ env, ... }:
