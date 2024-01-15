@@ -1,5 +1,6 @@
 module Web.Resize.Observer
   ( ResizeObserver
+  , ResizeObserverCallback
   , newResizeObserver
   , observe
   , observeBorderBox
