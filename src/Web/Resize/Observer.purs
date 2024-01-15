@@ -1,4 +1,10 @@
-module Web.Resize.Observer where
+module Web.Resize.Observer
+  ( ResizeObserver
+  , newResizeObserver
+  , observe
+  , observeBorderBox
+  , unobserve
+  ) where
 import Web.Resize.Observer.Entry
 import Web.DOM.Element (Element)
 import Effect (Effect)
