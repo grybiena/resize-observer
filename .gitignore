@@ -4,3 +4,5 @@ result
 generated-docs
 .direnv
 .psc-ide-port
+/.spago/
+/spago.lock
